@@ -1,5 +1,28 @@
 
+## Pre-requisities
+
+```bash
+npm install -g npm
+
+# gcloud needs to be installed
+# install datform cli
+npm i -g @dataform/cli
+
+
+
+# checks
+python --version
+npm --version
+node --version
+gcloud --version
+
+```
+
+
 ### How to use
+
+
+
 
 <b>Option 1: </b>
 
@@ -14,7 +37,16 @@ Open the repository in a [VSCode Dev Container](https://code.visualstudio.com/do
 gcloud init
 gloud auth application-default login
 gcloud config set project drawingfire-b72a8 # replace with your gcp project id
+
+# creates credentials needed to run dataform locally    
+dataform init-creds
+
+
+# to run the VSCode project
+dataform compile
+dataform run
 ```
+
 
 #### TODOs
 
